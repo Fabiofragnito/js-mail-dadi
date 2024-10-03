@@ -24,13 +24,35 @@ else {
 }
 
 
-// Gioco dei dadi
+
+//  Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-/* con il metodo math.random * 6, scrivo un numero decimale compreso tra 0 e poco meno di 6 */
-/* con math.floor ottengo un numero intero ma arrotonda verso il basso quindi ottengo solo numeri tra 0 e 5, pertanto devo aggiungere 1 per ottenere il range giusto */
 
 let randomNumber = Math.floor((Math.random()*6) +1)
 console.log(randomNumber);
 
+/* con il metodo math.random * 6, scrivo un numero decimale compreso tra 0 e poco meno di 6 */
+/* con math.floor ottengo un numero intero ma arrotonda verso il basso quindi ottengo solo numeri tra 0 e 5, pertanto devo aggiungere 1 per ottenere il range giusto */
 
+
+let pcScore = randomNumber;
+let playerScore = randomNumber;
+
+if (pcScore > playerScore) {
+    console.log("pc is the winner");
+    
+    
+}
+
+else if (playerScore > pcScore) {
+    console.log("player is the winner ");
+    
+
+} 
+
+else {
+    console.log("pareggio");
+    
+    
+}
