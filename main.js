@@ -12,6 +12,9 @@
 
 /* creo un array con le email che possono accedere */
 
+let emailUser = prompt("inserisci la tua email")
 const listEmails =  ["email1", "email2", "email3", "email4"]
+
+
 
 
