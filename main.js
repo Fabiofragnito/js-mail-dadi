@@ -10,11 +10,22 @@
 //     proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 
-/* creo un array con le email che possono accedere */
-
+/* creao un prompt x lutente */
 let emailUser = prompt("inserisci la tua email")
+
+/* creo un array con le email che possono accedere */
 const listEmails =  ["email1", "email2", "email3", "email4"]
 
+/* creao la condizione che se la lista include la mail dell utente ==> sara' valido il login */
+if (listEmails.includes(emailUser)) {
+    console.log("effettuato login");  
+}
 
+// * creao la condizione che se la lista  noninclude la mail dell utente ==> sara' invalido il login */
+else {
+    console.log("invalid login");
+    
+
+}
 
 
