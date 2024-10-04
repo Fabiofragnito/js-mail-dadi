@@ -9,19 +9,20 @@
 let emailUser = prompt("inserisci la tua email")
 
 /* creo un array con le email che possono accedere */
-const listEmails =  ["email1", "email2", "email3", "email4"]
+const listEmails =  ["mariorossi@hormail.com", "pincopallo@live.it", "marco123bianchi@gmail.com", "paolo56rossi@protonmail.com"]
 
-/* creao la condizione che se la lista include la mail dell utente ==> sara' valido il login */
-if (listEmails.includes(emailUser)) {
-    console.log("effettuato login");  
+
+if (listEmails.includes(emailUser)) {console.log("effettuato login")/* creao la condizione che se la lista include la mail dell utente ==> sara' valido il login */ 
+}
+     
+
+else {console.log("invalid login")// * creao la condizione che se la lista  noninclude la mail dell utente ==> sara' invalido il login */
+
 }
 
-// * creao la condizione che se la lista  noninclude la mail dell utente ==> sara' invalido il login */
-else {
-    console.log("invalid login");
+ 
     
 
-}
 
 
 
@@ -43,20 +44,11 @@ let playerScore = Math.floor((Math.random()*6) +1);
 console.log(playerScore);
 
 
-if (pcScore > playerScore) {
-    console.log("pc is the winner");
-    
-    
+if (pcScore > playerScore) {console.log("pc is the winner")    
 }
 
-else if (playerScore > pcScore) {
-    console.log("player is the winner ");
-    
-
+else if (playerScore > pcScore) { console.log("player is the winner ")  
 } 
 
-else {
-    console.log("pareggio");
-    
-    
+else {console.log("pareggio")     
 }
